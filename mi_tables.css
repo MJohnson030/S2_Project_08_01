@@ -6,8 +6,8 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Millione Johnson
+   Date: 12/12/18  
 
    Filename:         mi_tables.css
 
@@ -17,9 +17,10 @@
 
 table {
 	background: linear-gradient(to bottom, rgb(190,215,255), black);
-	border:5px solid gray;
-	
+	border:5px solid gray;	
 }
+
+
 
 table#pricing th, table#pricing td {
 	border: 3px solid gray;
@@ -43,16 +44,24 @@ th, td{
 	line-height: 1.4em;
 }
 
+/* Adds a linear background that spans from black to light blue. The border is solid. the background color for the pricing table headers is black, and the words are a light blue. The pricing color for table data selectors are white and aligned to the top. The line-height is adjusted for the table header and table data.*/
+
 /* Column Styles */
 
 
 col#firstCol {
+	-moz-column-widths: 24%;
+	-webkit-column-widths: 24%;
 	width: 24%;
 }
 
 col.dataCols {
+	-moz-column-widths: 19%;
+	-webkit-column-width: 19%;
 	width: 19%;
 }
+
+/* Changed the width for the ID selector of firstcol and class selector of datacols. Added a webkit to both selectors so that they will render properly in all browsers.  */
 
 
 /* Table Header Styles */
@@ -62,7 +71,7 @@ thead tr{
 }
 
 thead tr:first-of-type th:first-of-type {
-	font-size: 2em;
+	font-size: 1.4em;
 }
 
 thead tr:first-of-type th:not(:first-of-type) {
@@ -70,7 +79,7 @@ thead tr:first-of-type th:not(:first-of-type) {
 	color:black;
 }
 
- 
+ /* The table row inside the table head element have a height of 60 pixels. Using the first of type for the tr and th selector allows us to change the font-size for just the first tr and th. In the lines that follow, the selector with 'not' in front of it will allow us to target everything except for the first of its type for the elements tr and th. */
 
 
 
